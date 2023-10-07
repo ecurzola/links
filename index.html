@@ -9,9 +9,17 @@
         padding-top: 40px;
         padding-bottom: 40px;
       }
+      .name {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        color: black;
+        font-family: 'Playfair Display', Serif;
+      }
       .banner-image {
         width: 128px;
         height: 128px;
+        align-items: center;
         object-fit: cover;
         border-radius: 128px;
       }
@@ -21,43 +29,74 @@
         border-radius: 48px;
         object-fit: cover;
       }
+      .items {
+        margin: auto;
+        padding: 30px;
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .link {
+        padding: 5px;
+        border-radius: 500px;
+        display: flex;
+        align-items: center;
+        box-shadow: var(--shadow-elevation-low);
+        transition: 0.3s;
+      }
+      .link-text {
+        flex: 1;
+        text-align: center;
+        color: blue;
+        text-decoration: none;
+        padding: 0 5px;
+      }
+      
       </style>
     </style>
   </head>
 
   <body>
-    <div class="banner">
-      <img src="headshot.jpg" alt="Enrico Curzola Headshot" class="banner-image">
-      
-    </div>
-   
-    <div class="name">
-      Enrico Curzola
-    </div>
+    <div class="items">
+      <div class="banner">
+        <img src="headshot.jpg" alt="Enrico Curzola Headshot" class="banner-image">
+        
+      </div>
     
-    <div class="social-icons">
-      
-      <a href="https://www.linkedin.com/in/enrico-m-curzola-50a71657//" target="_blank">
-        LinkedIn
-      </a>
-      
-      <div class="link">
-        <img
-          src="/thumbnails/booth.jpg" alt="Booth Shool of Business" class="thumbnails">
-    
-        <a target="_blank" href="https://www.chicagobooth.edu/">
-          University of Chicago Booth School of Business
-        </a>
+      <div class="name">
+        Enrico Curzola
       </div>
       
-      <div class="link">
-        <img
-          src="/thumbnails/wsj.png" alt="Wall Street Journal" class="thumbnails">
-    
-        <a target="_blank" href="https://www.wsj.com/">
-          The Wall Street Journal
-        </a>
+      <div class="social-icons">
+        <div class="link">
+          <img
+              src="/thumbnails/linkedin.png" alt="linkedin" class="thumbnails">
+
+          <a class="link-text" href="https://www.linkedin.com/in/enrico-m-curzola-50a71657//" target="_blank">
+            LinkedIn
+          </a>
+        </div>
+        
+        <div class="link">
+          <img
+            src="/thumbnails/booth_logo.jpg" alt="Booth School of Business" class="thumbnails">
+      
+          <a class="link-text" target="_blank" href="https://www.chicagobooth.edu/">
+            University of Chicago Booth School of Business
+          </a>
+        </div>
+        
+        <div class="link">
+          <img
+            src="/thumbnails/wsj.png" alt="Wall Street Journal" class="thumbnails">
+      
+          <a class="link-text" target="_blank" href="https://www.wsj.com/">
+            The Wall Street Journal
+          </a>
+        </div>
       </div>
+    </div>
   </body>
 
 </html>
